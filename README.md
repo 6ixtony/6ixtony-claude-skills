@@ -48,6 +48,7 @@ Do not upload all 80 skills at once. Claude loads skill descriptions into contex
 2. Upload one zip from `zips/`. Upload one skill per zip, not a batch of unrelated trees.
 3. Repeat for each skill you actually need.
 4. Skills that call FFmpeg, Remotion, Node, or paid APIs still need those tools or keys on the machine that runs them. The Claude.ai chat upload gives Claude the *instructions*; it does not install FFmpeg into the browser.
+5. Claude.ai rejects a zip with more than 200 files. `zips/ghost-editor.zip` (381 files) and `zips/ffmpeg-skill.zip` (335 files) are over that limit; upload `zips/ghost-editor-lite.zip` and `zips/ffmpeg-skill-lite.zip` instead. Each lite zip omits bulky folders and says so in its README. The full skill folders stay in this repository.
 
 ### Claude Code (`~/.claude/skills`)
 
